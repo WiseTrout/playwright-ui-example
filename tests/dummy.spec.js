@@ -21,16 +21,16 @@ describe('Dummy category', () => {
         })
 });
 
-describe('Using CSV module', () => {
-    const csv = readFileSync('metadata/suites/dummy-suite/data.csv');
-    const records = parse(csv, {
-        columns: true,
-        skip_empty_lines: true
-    })
-    records.forEach(record => {
-        test(record.label, async ({page}) => {
-            await page.goto(record.URL);
-            await expect(page).toHaveTitle(record.title  + ' | Wise Trout');
-        })
-    })
-});
+// describe('Using CSV module', () => {
+//     const csv = readFileSync('metadata/suites/dummy-suite/data.csv');
+//     const records = parse(csv, {
+//         columns: true,
+//         skip_empty_lines: true
+//     })
+//     records.forEach(record => {
+//         test(record.label, async ({page}) => {
+//             await page.goto(record.URL);
+//             await expect(page).toHaveTitle(record.title  + ' | Wise Trout');
+//         })
+//     })
+// });

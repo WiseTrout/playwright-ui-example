@@ -1,8 +1,8 @@
 import { expect } from '@playwright/test';
 import { test } from '../ui-lib/fixtures.js';
 import createDescribe from '../ui-lib/describe.js';
-import { readFileSync } from 'fs';
-import { parse } from 'csv-parse/sync';
+// import { readFileSync } from 'fs';
+// import { parse } from 'csv-parse/sync';
 
 const describe = createDescribe("dummy.spec.js");
 const settings = readSettingsSync();

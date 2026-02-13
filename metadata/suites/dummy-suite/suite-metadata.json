@@ -1,0 +1,6 @@
+{
+    "title": "Dummy suite",
+    "testFiles": [
+        "dummy.spec.js"
+    ]
+}

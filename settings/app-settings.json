@@ -1,0 +1,65 @@
+{
+  "applicationName": "My dummy app",
+  "defaultBrowsersToUse": [
+    "firefox"
+  ],
+  "globalSettings": [
+    {
+      "name": "baseUrl",
+      "label": "Base URL",
+      "type": "text",
+      "defaultValue": "https://wisetrout.com",
+      "required": true,
+      "showInSettingsPage": true
+    },
+     {
+      "name": "visualRegression",
+      "label": "Test Visual Regression",
+      "type": "radio",
+      "options": [
+        {
+          "value": "skip",
+          "label": "Skip",
+          "defaultSelected": true
+        },
+        {
+          "value": "test",
+          "label": "Run visual regression checks"
+        },
+        {
+          "value": "update",
+          "label": "Update snapshots"
+        }
+      ],
+      "showInSettingsPage": true
+    },
+    {
+      "name": "videoWidth",
+      "label": "Video width",
+      "type": "number",
+      "defaultValue": 1920,
+      "showInSettingsPage": true
+    },
+    {
+      "name": "videoHeight",
+      "label": "Video height",
+      "type": "number",
+      "defaultValue": 1020,
+      "showInSettingsPage": true
+    },
+    {
+      "name": "checkbox",
+      "label": "checkbox",
+      "type": "checkbox",
+      "defaultSelected": true
+    }
+  ],
+  "fileUploads": [
+    {
+      "name": "dummyFileInput",
+      "label": "Dummy info",
+      "accept": "csv",
+      "savePath": "/metadata/data.csv"
+    }
+  ]
+}

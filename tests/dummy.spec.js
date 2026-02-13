@@ -5,7 +5,6 @@ import { readFileSync } from 'fs';
 import { parse } from 'csv-parse/sync';
 
 const describe = createDescribe("dummy.spec.js");
-parse({  })
 
 describe('Dummy category', () => {
         test('Page title', async ({ page }) => {

@@ -1,6 +1,7 @@
 import { expect } from '@playwright/test';
 import { test } from '../ui-lib/fixtures.js';
 import createDescribe from '../ui-lib/describe.js';
+import readSettingsSync from '../ui-lib/read-settings-sync.js';
 // import { readFileSync } from 'fs';
 // import { parse } from 'csv-parse/sync';
 

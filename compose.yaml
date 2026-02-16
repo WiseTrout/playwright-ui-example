@@ -11,6 +11,7 @@ services:
       security_opt:
         - seccomp=seccomp_profile.json
       volumes:
+        - node_modules:/app/node_modules
         - type: bind
           source: ./hooks
           target: /app/hooks
@@ -35,3 +36,5 @@ services:
         # - type: bind
         #   source: ./package.json
         #   target: /app/aux-dependencies/package.json
+volumes:
+  node_modules:

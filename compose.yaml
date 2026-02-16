@@ -23,6 +23,9 @@ services:
         - type: bind
           source: ./settings
           target: /app/settings
+        - type: bind
+          source: ./ui-lib
+          target: /app/ui-lib
         #  Create empty file password.txt and uncomment the following lines to use authorization.
         #  To reset the password, empty the contents of existing password.txt
         # - type: bind
